@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ca.ucalcary.cpsc.groupprojectgui.AddStudentToSchoolController">
+   <children>
+      <TextField layoutX="112.0" layoutY="15.0" prefHeight="39.0" prefWidth="149.0" />
+      <Label layoutX="19.0" layoutY="18.0" prefHeight="33.0" prefWidth="85.0" text="Student ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="72.0" prefHeight="33.0" prefWidth="76.0" text="School ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField layoutX="112.0" layoutY="73.0" prefHeight="39.0" prefWidth="149.0" />
+   </children>
+</AnchorPane>

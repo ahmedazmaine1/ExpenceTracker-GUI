@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="411.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Load" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+              <MenuItem mnemonicParsing="false" text="Save" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Save As" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Delete" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Redo" />
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" text="Undo" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Add Student" />
+            <Menu mnemonicParsing="false" text="Add School" />
+            <Menu mnemonicParsing="false" text="Add Student To School" />
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="About" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox prefHeight="314.0" prefWidth="154.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="371.0" prefWidth="154.0">
+               <children>
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutY="105.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" text="Display a student info">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutY="161.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="154.0" text="Display all students">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutY="228.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" text="Display All Schools">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button alignment="CENTER" contentDisplay="CENTER" layoutY="303.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="154.0" text="List students by school">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="198.0" prefWidth="569.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="168.0" prefWidth="168.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="8.0" layoutY="158.0" prefHeight="32.0" prefWidth="110.0" text="Status Message">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane prefHeight="83.0" prefWidth="309.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="162.0" layoutY="161.0" prefHeight="29.0" prefWidth="113.0" text="Error Message">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Pane layoutX="-198.0" layoutY="162.0" prefHeight="36.0" prefWidth="359.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children></HBox>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="242.0" prefWidth="291.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="166.0" prefHeight="28.0" prefWidth="277.0" text="Display Outputs">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <SplitPane dividerPositions="0.14873417721518986, 0.40822784810126583, 0.6487341772151899, 0.9462025316455697" layoutX="7.0" layoutY="193.0" orientation="VERTICAL" prefHeight="318.0" prefWidth="289.0">
+               <items>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="67.0" prefWidth="284.0" />
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="106.0" prefWidth="289.0" />
+                  <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="106.0" prefWidth="289.0" />
+                  <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="26.0" prefWidth="284.0" />
+                  <ScrollBar />
+               </items>
+            </SplitPane>
+            <ScrollBar layoutX="287.0" layoutY="194.0" orientation="VERTICAL" prefHeight="298.0" prefWidth="14.0" />
+         </children>
+      </AnchorPane>
+   </center>
+   <right>
+      <AnchorPane prefHeight="275.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="5.0" layoutY="166.0" prefHeight="339.0" prefWidth="150.0">
+               <children>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button alignment="CENTER" layoutX="5.0" layoutY="26.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="123.0" text="Cheapest School">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <TextArea layoutX="5.0" layoutY="69.0" prefHeight="104.0" prefWidth="147.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="7.0" layoutY="6.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="123.0" text="Average spender">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <TextArea layoutX="7.0" layoutY="47.0" prefHeight="110.0" prefWidth="146.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
